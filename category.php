@@ -36,18 +36,27 @@ $current_category = get_category($conn, $id);
 
     <!-- bootstrap 5 CDN-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+	
     <!-- bootstrap 5 Js bundle CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
-
+	<style>
+        body {
+            background-image: url('img/azure-color-solid-background-1920x1080.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="index.php">Online Book Store</a>
+		  <a class="navbar-brand" href="index.html"><i class="fas fa-database"></i> System Information</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -57,25 +66,23 @@ $current_category = get_category($conn, $id);
 		        <li class="nav-item">
 		          <a class="nav-link active" 
 		             aria-current="page" 
-		             href="index.php">Store</a>
+		             href="index.php"><i class="fas fa-list"></i> List</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" 
-		             href="#">Contact</a>
+		             href="https://github.com/moaditPENS/Final_Project_Web.git">My Github</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" 
-		             href="#">About</a>
-		        </li>
+   					 <a class="nav-link btn btn-info" href="videos.html">Tools</a>
+				</li>
 		        <li class="nav-item">
 		          <?php if (isset($_SESSION['user_id'])) {?>
 		          	<a class="nav-link" 
-		             href="admin.php">Admin</a>
+		             href="admin.php"><i class="fas fa-user-group"></i>  Admin</a>
 		          <?php }else{ ?>
 		          <a class="nav-link" 
-		             href="login.php">Login</a>
+		             href="login.php"><i class="fas fa-user"></i> Login</a>
 		          <?php } ?>
-
 		        </li>
 		      </ul>
 		    </div>

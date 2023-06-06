@@ -41,12 +41,18 @@ $categories = get_all_categories($conn);
             background-size: cover;
         }
     </style>
+	  <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
 </head>
 <body>
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="index.html"><i class="fas fa-database"></i> Dashboard Information</a>
+		    <a class="navbar-brand" href="index.html"><i class="fas fa-database"></i> Sistem Information</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -60,7 +66,7 @@ $categories = get_all_categories($conn);
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" 
-		             href="#">My Github</a>
+		             href="https://github.com/moaditPENS/Final_Project_Web.git">My Github</a>
 		        </li>
 		        <li class="nav-item">
    					 <a class="nav-link btn btn-info" href="videos.html">Tools</a>
@@ -73,7 +79,6 @@ $categories = get_all_categories($conn);
 		          <a class="nav-link" 
 		             href="login.php"><i class="fas fa-user"></i> Login</a>
 		          <?php } ?>
-
 		        </li>
 		      </ul>
 		    </div>
@@ -191,5 +196,11 @@ $categories = get_all_categories($conn);
 		</div>
 		</div>
 	</div>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
 </body>
 </html>

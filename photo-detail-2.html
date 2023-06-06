@@ -80,7 +80,7 @@ https://templatemo.com/tm-556-catalog-z
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-3" href="videos.html">
+                    <a class="nav-link nav-link-3" href="index.php">
                         <button class="btn btn-primary-custom-2">
                         <i class="fas fa-tools"></i>System
                     </button>
@@ -112,12 +112,12 @@ https://templatemo.com/tm-556-catalog-z
         </div>
     </nav>
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/PENS.jpg">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
+          <!-- <form class="d-flex tm-search-form">
+          <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search" id="searchBar">
+          <button class="btn btn-outline-success tm-search-btn" type="submit" onclick="search()">
+            <i class="fas fa-search"></i>
+          </button>
+        </form> -->
     </div>
 
     <div class="container-fluid tm-container-content tm-mt-60">
@@ -131,10 +131,10 @@ https://templatemo.com/tm-556-catalog-z
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                 <div class="tm-bg-gray tm-video-details">
                     <p class="mb-4 text-black-50">
-                        Berikut adalah contoh AR-Output dari Function Generator</a>, Tekan pada AR-Output untuk memunculkan model 3D melalui Image Marker.
+                        Berikut adalah contoh AR-Output dari Function Generator</a>, Tekan pada AR-View untuk memunculkan model 3D melalui Image Marker.
                     </p>
                     <div class="text-center mb-5">
-                        <a href="ar.js_studio/ar_3/index.html" class="btn btn-primary tm-btn-big">AR-Output</a>
+                        <a href="ar.js_studio/ar_3/index.html" class="btn btn-primary tm-btn-big">AR-View</a>
                     </div>                    
                     <div class="mb-4 d-flex flex-wrap">
                         <div class="mr-4 mb-2">
@@ -152,8 +152,8 @@ https://templatemo.com/tm-556-catalog-z
                     </div>
                     <div>
                         <h3 class="tm-text-gray-dark mb-3">Another Experiences</h3>
-                        <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Video On AR</a>
-                        <a href="photo-model-2.html" class="tm-text-primary mr-4 mb-2 d-inline-block">Model 3D On Web</a>
+                        <a href="ar_video_marker/ar_videomarker_0123/index.html" class="tm-text-primary mr-4 mb-2 d-inline-block">Video On AR</a>
+                        <a href="img/marker/videomarker2.png" class="tm-text-primary mr-4 mb-2 d-inline-block">Video Marker</a>
                         <!-- <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Microsoft Edge</a>
                         <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Opera Mini</a>
                         <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">UC Browser</a> -->
@@ -163,7 +163,7 @@ https://templatemo.com/tm-556-catalog-z
         </div>
         <div class="row mb-4">
             <h2 class="col-12 tm-text-primary">
-                Another 3D Asset
+                Another AR Model
             </h2>
         </div>
         <div class="row mb-3 tm-gallery">
@@ -176,8 +176,8 @@ https://templatemo.com/tm-556-catalog-z
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>0</span>
+                    <span class="tm-text-primary">MARKER 1</span>
+                    <span class="tm-text-gray-dark">Multimeter Digital</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -189,8 +189,60 @@ https://templatemo.com/tm-556-catalog-z
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>0</span>
+                    <span class="tm-text-primary">MARKER 2</span>
+                    <span class="tm-text-gray-dark">Spectrum Analyzer</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/image01.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Function Generator</h2>
+                        <a href="photo-detail-2.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-primary">MARKER 3</span>
+                    <span class="tm-text-gray-dark">Function Generator</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/image04.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Oscilloscope</h2>
+                        <a href="photo-detail-4.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-primary">MARKER 4</span>
+                    <span class="tm-text-gray-dark">Oscilloscope</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/image07_2.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Test Signal and synch Pulse Generator</h2>
+                        <a href="photo-detail-8.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-primary">MARKER 5</span>
+                    <span class="tm-text-gray-dark">Test Signal and Synch Pulse Generator</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/SR630_image08.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Thermocouple Monitor</h2>
+                        <a href="photo-detail-6.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-primary">MARKER 7</span>
+                    <span class="tm-text-gray-dark">Thermocouple Monitor</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -198,79 +250,53 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/rigol-image03.jpeg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>RF Signal Generator</h2>
-                        <a href="photo-model-5.html">View more</a>
+                        <a href="photo-detail-5.html">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>0</span>
+                    <span class="tm-text-primary">MARKER 6</span>
+                    <span class="tm-text-gray-dark">RF Signal Generator</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-                    <img src="img/noimg.jpg" alt="Image" class="img-fluid">
+                    <img src="img/image05_2.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Plants</h2>
-                        <a href="#">View more</a>
+                        <h2>Raspberry Pi 3 model B</h2>
+                        <a href="photo-detail-7.html">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>views</span>
+                    <span class="tm-text-primary">MARKER 8</span>
+                    <span class="tm-text-gray-dark">Raspberry Pi 3 model B</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-                    <img src="img/noimg.jpg" alt="Image" class="img-fluid">
+                    <img src="img/image06_2.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Morning</h2>
-                        <a href="#">View more</a>
+                        <h2>ESP32</h2>
+                        <a href="photo-detail-9.html">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>views</span>
+                    <span class="tm-text-primary">MARKER 9</span>
+                    <span class="tm-text-gray-dark">ESP32</span>
                 </div>
-            </div>
+            </div>   
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-                    <img src="img/noimg.jpg" alt="Image" class="img-fluid">
+                    <img src="img/ArduinoUnoFront.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Pinky</h2>
-                        <a href="#">View more</a>
+                        <h2>Arduino Uno</h2>
+                        <a href="photo-detail-10.html">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>views</span>
+                    <span class="tm-text-primary">MARKER 9</span>
+                    <span class="tm-text-gray-dark">Arduino Uno</span>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                <figure class="effect-ming tm-video-item">
-                    <img src="img/noimg.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Bus</h2>
-                        <a href="#">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>views</span>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                <figure class="effect-ming tm-video-item">
-                    <img src="img/noimg.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>New York</h2>
-                        <a href="#">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">2020</span>
-                    <span>views</span>
-                </div>
-            </div>        
+            </div>           
         </div> <!-- row -->
     </div> <!-- container-fluid, tm-container-content -->
 
@@ -304,7 +330,7 @@ https://templatemo.com/tm-556-catalog-z
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
-                    Copyright 2022 Electronic Engineering Polytechnic Institute of Surabaya. All rights reserved.
+                    Copyright 2023 Politeknik Elektronika Negeri Surabaya. All rights reserved.
                 </div>
                 <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
                     Designed by <a href="https://templatemo.com" class="tm-text-gray" rel="sponsored" target="_parent">Bootstrap 5</a>
